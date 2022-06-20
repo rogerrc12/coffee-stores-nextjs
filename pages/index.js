@@ -1,8 +1,8 @@
-import { useEffect, useState, useContext } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { getCoffeeStores } from "../lib/coffee-store";
+import { useContext, useEffect } from "react";
 import { useGelocation } from "../hooks/use-geolocation.hook";
+import { getCoffeeStores } from "../lib/coffee-store";
 import { ACTION_TYPES, StoreContext } from "../store/store-context";
 
 import { Banner } from "../components/banner.component";
@@ -58,7 +58,7 @@ export default function Home({ coffeeStores }) {
 
       <main className={styles.main}>
         <div className={styles.heroImage}>
-          <Image src="/static/hero-banner.png" alt="Discover coffee shops" width={375} height={375} />
+          <Image src="/static/hero-banner.webp" alt="Discover coffee shops" width={400} height={400} />
         </div>
         <Banner onFind={handleGeolocation} findText={isLoading ? "Buscando..." : "Encontrar tiendas cerca"} />
         {locationError && <p>Ha ocurrido un error: {locationError}</p>}

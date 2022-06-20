@@ -31,7 +31,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: IBMPlexSans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-image: url(/static/bg-app.png);
+  background-image: url(/static/bg-app.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
