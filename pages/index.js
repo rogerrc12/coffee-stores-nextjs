@@ -61,7 +61,7 @@ export default function Home({ coffeeStores }) {
           <Image src="/static/hero-banner.webp" alt="Discover coffee shops" width={400} height={400} />
         </div>
         <Banner onFind={handleGeolocation} findText={isLoading ? "Buscando..." : "Encontrar tiendas cerca"} />
-        {locationError && <p>Ha ocurrido un error: {locationError}</p>}
+        {locationError && <p>Ha ocurrido un error inesperado: {locationError}</p>}
 
         {(coffeeStores.length > 0 || storesNear.length > 0) && (
           <section className={styles.sectionWrapper}>
