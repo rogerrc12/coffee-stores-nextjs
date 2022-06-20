@@ -58,7 +58,7 @@ export default function Home({ coffeeStores }) {
 
       <main className={styles.main}>
         <div className={styles.heroImage}>
-          <Image src="/static/hero-banner.webp" alt="Discover coffee shops" width={400} height={400} />
+          <Image src="/static/hero-banner.webp" alt="Discover coffee shops" objectFit="contain" width={500} height={500} />
         </div>
         <Banner onFind={handleGeolocation} findText={isLoading ? "Buscando..." : "Encontrar tiendas cerca"} />
         {locationError && <p>Ha ocurrido un error inesperado: {locationError}</p>}
